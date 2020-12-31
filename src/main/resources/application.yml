@@ -1,0 +1,12 @@
+baidu:
+  personal:
+    apiKey: 7hxgUX3PbD9PAr3YBY73xw3F
+    secretKey: v5NA9fBvhxUzviTguQWcLjiOjjucox8F
+    callBackUri: http://statistics.cn1.utools.club/callback/baidu
+    authorize: http://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id={CLIENT_ID}&redirect_uri={REDIRECT_URI}&scope=basic&display=popup
+    token: http://openapi.baidu.com/oauth/2.0/token?grant_type=authorization_code&code={CODE}&client_id={CLIENT_ID}&client_secret={CLIENT_SECRET}&redirect_uri={REDIRECT_URI}
+    api:
+      siteList: https://openapi.baidu.com/rest/2.0/tongji/config/getSiteList
+
+server:
+  port: 8080
